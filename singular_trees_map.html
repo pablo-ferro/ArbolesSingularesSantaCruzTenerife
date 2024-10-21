@@ -1,31 +1,31 @@
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
+<!DOCTYPE html>
+<html>
+<head>
     
-    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     
-        &lt;script&gt;
+        <script>
             L_NO_TOUCH = false;
             L_DISABLE_3D = false;
-        &lt;/script&gt;
+        </script>
     
-    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
-    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
     
-            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
-            &lt;style&gt;
-                #map_8ea4692ab7eebcb826f3ffa3992cdd70 {
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e18f388480065a58dfdc854b976f7c73 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -33,29 +33,25 @@
                     top: 0.0%;
                 }
                 .leaflet-container { font-size: 1rem; }
-            &lt;/style&gt;
+            </style>
         
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css&quot;/&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css&quot;/&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css&quot;/&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css&quot;/&gt;
-&lt;/head&gt;
-&lt;body&gt;
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_8ea4692ab7eebcb826f3ffa3992cdd70&quot; &gt;&lt;/div&gt;
+            <div class="folium-map" id="map_e18f388480065a58dfdc854b976f7c73" ></div>
         
-&lt;/body&gt;
-&lt;script&gt;
+</body>
+<script>
     
     
-            var map_8ea4692ab7eebcb826f3ffa3992cdd70 = L.map(
-                &quot;map_8ea4692ab7eebcb826f3ffa3992cdd70&quot;,
+            var map_e18f388480065a58dfdc854b976f7c73 = L.map(
+                "map_e18f388480065a58dfdc854b976f7c73",
                 {
                     center: [28.4636, -16.2518],
                     crs: L.CRS.EPSG3857,
@@ -69,946 +65,908 @@
 
         
     
-            var tile_layer_d3f295cece93a1e7761860be6c5a3842 = L.tileLayer(
-                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
-                {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+            var tile_layer_9d02b908da611d434dd71a75f2d54b23 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_d3f295cece93a1e7761860be6c5a3842.addTo(map_8ea4692ab7eebcb826f3ffa3992cdd70);
+            tile_layer_9d02b908da611d434dd71a75f2d54b23.addTo(map_e18f388480065a58dfdc854b976f7c73);
         
     
             L.control.fullscreen(
-                {&quot;forceSeparateButton&quot;: false, &quot;position&quot;: &quot;topleft&quot;, &quot;title&quot;: &quot;Full Screen&quot;, &quot;titleCancel&quot;: &quot;Exit Full Screen&quot;}
-            ).addTo(map_8ea4692ab7eebcb826f3ffa3992cdd70);
+                {"forceSeparateButton": false, "position": "topright", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
+            ).addTo(map_e18f388480065a58dfdc854b976f7c73);
         
     
-            var tile_layer_670460e028781d2e9c20f93b39883f93 = L.tileLayer(
-                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
-                {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
-            );
-            var mini_map_bd3e38877acc89a345ea6576f887ae27 = new L.Control.MiniMap(
-                tile_layer_670460e028781d2e9c20f93b39883f93,
-                {&quot;autoToggleDisplay&quot;: false, &quot;centerFixed&quot;: false, &quot;collapsedHeight&quot;: 25, &quot;collapsedWidth&quot;: 25, &quot;height&quot;: 150, &quot;minimized&quot;: false, &quot;position&quot;: &quot;bottomright&quot;, &quot;toggleDisplay&quot;: true, &quot;width&quot;: 150, &quot;zoomAnimation&quot;: false, &quot;zoomLevelOffset&quot;: -5}
-            );
-            map_8ea4692ab7eebcb826f3ffa3992cdd70.addControl(mini_map_bd3e38877acc89a345ea6576f887ae27);
-        
-    
-            var measure_control_9619f5359173e3deb7c2c98e4f8013c0 = new L.Control.Measure(
-                {&quot;position&quot;: &quot;topright&quot;, &quot;primaryAreaUnit&quot;: &quot;sqmeters&quot;, &quot;primaryLengthUnit&quot;: &quot;meters&quot;, &quot;secondaryAreaUnit&quot;: &quot;acres&quot;, &quot;secondaryLengthUnit&quot;: &quot;miles&quot;});
-            map_8ea4692ab7eebcb826f3ffa3992cdd70.addControl(measure_control_9619f5359173e3deb7c2c98e4f8013c0);
-
-            // Workaround for using this plugin with Leaflet&gt;=1.8.0
-            // https://github.com/ljagis/leaflet-measure/issues/171
-            L.Control.Measure.include({
-                _setCaptureMarkerIcon: function () {
-                    // disable autopan
-                    this._captureMarker.options.autoPanOnFocus = false;
-                    // default function
-                    this._captureMarker.setIcon(
-                        L.divIcon({
-                            iconSize: this._map.getSize().multiplyBy(2)
-                        })
-                    );
-                },
-            });
-
-        
-    
-            var marker_cluster_6938fbc60148db5805ad9ae378465650 = L.markerClusterGroup(
-                {&quot;disableClusteringAtZoom&quot;: 16, &quot;maxClusterRadius&quot;: 20, &quot;showCoverageOnHover&quot;: false, &quot;spiderfyOnMaxZoom&quot;: false, &quot;zoomToBoundsOnClick&quot;: true}
+            var marker_cluster_ce662830240bc4f211f50165b3e220d9 = L.markerClusterGroup(
+                {"disableClusteringAtZoom": 16, "maxClusterRadius": 30, "showCoverageOnHover": false, "spiderfyOnMaxZoom": false, "zoomToBoundsOnClick": true}
             );
         
     
-            var circle_marker_89fddf293de507fadba26e00da1378a9 = L.circleMarker(
+            var circle_marker_1fa2b43b6414aacd690369eb6e2f12f8 = L.circleMarker(
                 [28.464437239, -16.2647339816],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_89fddf293de507fadba26e00da1378a9.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: ACA_NIL_kr-1&lt;br&gt;Nombre común: goma arÃ¡biga
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_1fa2b43b6414aacd690369eb6e2f12f8.bindTooltip(
+                `<div>
+                     Geocodigo: ACA_NIL_kr-1<br>Nombre común: goma arÃ¡biga
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_3b1a06b088812f5f83a5304447a530aa = L.circleMarker(
+            var circle_marker_7dc7b1ea4d1208c7833c74547a5eb171 = L.circleMarker(
                 [28.4688647825, -16.2514348033],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_3b1a06b088812f5f83a5304447a530aa.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: ADA_DIG-1&lt;br&gt;Nombre común: baobab
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_7dc7b1ea4d1208c7833c74547a5eb171.bindTooltip(
+                `<div>
+                     Geocodigo: ADA_DIG-1<br>Nombre común: baobab
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_845146529e470440194000d063639884 = L.circleMarker(
+            var circle_marker_ecc18506820fd2475144b9672403150f = L.circleMarker(
                 [28.4519009658, -16.2569391052],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_845146529e470440194000d063639884.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: ADA_ZA-1&lt;br&gt;Nombre común: baobab za
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_ecc18506820fd2475144b9672403150f.bindTooltip(
+                `<div>
+                     Geocodigo: ADA_ZA-1<br>Nombre común: baobab za
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_19f3e456f4f08797e129629c554ca459 = L.circleMarker(
+            var circle_marker_5d1b84bd69871958cc45c9db3da2e812 = L.circleMarker(
                 [28.4515725782, -16.2552521561],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_19f3e456f4f08797e129629c554ca459.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: ARE_PIN-1&lt;br&gt;Nombre común: palma del azÃºcar
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_5d1b84bd69871958cc45c9db3da2e812.bindTooltip(
+                `<div>
+                     Geocodigo: ARE_PIN-1<br>Nombre común: palma del azÃºcar
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_c76d16e9e12010b6efadec815de467a8 = L.circleMarker(
+            var circle_marker_3d6b28cfbdfbae96a276d94a3df509ac = L.circleMarker(
                 [28.4521597227, -16.2563044132],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_c76d16e9e12010b6efadec815de467a8.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: ATT_COH-1&lt;br&gt;Nombre común: corozo
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_3d6b28cfbdfbae96a276d94a3df509ac.bindTooltip(
+                `<div>
+                     Geocodigo: ATT_COH-1<br>Nombre común: corozo
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_2db3ba3e0fe4dfd6c83ed1daf56c2bf9 = L.circleMarker(
+            var circle_marker_dc8df344fb14235b905662e640497359 = L.circleMarker(
                 [28.4583434315, -16.2645963767],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_2db3ba3e0fe4dfd6c83ed1daf56c2bf9.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: BRA_POP-1&lt;br&gt;Nombre común: braquiquito, Ã¡rbol botella
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_dc8df344fb14235b905662e640497359.bindTooltip(
+                `<div>
+                     Geocodigo: BRA_POP-1<br>Nombre común: braquiquito, Ã¡rbol botella
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_ae2f92d1ef2d40d860b4cc1f584bff6b = L.circleMarker(
+            var circle_marker_54ca62fc93017f50f937a9ec71456f0c = L.circleMarker(
                 [28.4726120024, -16.2538532529],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_ae2f92d1ef2d40d860b4cc1f584bff6b.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: CAE_CAC-1&lt;br&gt;Nombre común: cascalote, chalala
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_54ca62fc93017f50f937a9ec71456f0c.bindTooltip(
+                `<div>
+                     Geocodigo: CAE_CAC-1<br>Nombre común: cascalote, chalala
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_8cda1e7195767b648ec6cc39f6bdf310 = L.circleMarker(
+            var circle_marker_bf40486819685194d79fb3df979aecc2 = L.circleMarker(
                 [28.4646452967, -16.2492623274],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_8cda1e7195767b648ec6cc39f6bdf310.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: CAS_EQU-1&lt;br&gt;Nombre común: casuarina, pino australiano
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_bf40486819685194d79fb3df979aecc2.bindTooltip(
+                `<div>
+                     Geocodigo: CAS_EQU-1<br>Nombre común: casuarina, pino australiano
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_753fef9b9006babc11603ed41e7c0b4f = L.circleMarker(
+            var circle_marker_d09751c0e31c99dc18934d912ff4dd28 = L.circleMarker(
                 [28.4621436005, -16.2528251873],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_753fef9b9006babc11603ed41e7c0b4f.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: CEC_PEL-1&lt;br&gt;Nombre común: yagrumo, yarumo o guarumbo
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_d09751c0e31c99dc18934d912ff4dd28.bindTooltip(
+                `<div>
+                     Geocodigo: CEC_PEL-1<br>Nombre común: yagrumo, yarumo o guarumbo
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_f6960690c755242c03283d11d691e6cf = L.circleMarker(
+            var circle_marker_76b580361dd7bf45498c3403d7d47d3b = L.circleMarker(
                 [28.4641988908, -16.2614376436],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_f6960690c755242c03283d11d691e6cf.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: CEI_PEN-1&lt;br&gt;Nombre común: ceiba
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_76b580361dd7bf45498c3403d7d47d3b.bindTooltip(
+                `<div>
+                     Geocodigo: CEI_PEN-1<br>Nombre común: ceiba
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_550e76cbca2bee044bdd0d31307b289a = L.circleMarker(
+            var circle_marker_eab8235945b07a4e9854145dd308c1d5 = L.circleMarker(
                 [28.4732436627, -16.2538275159],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_550e76cbca2bee044bdd0d31307b289a.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: CEI_PEN-2&lt;br&gt;Nombre común: ceiba
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_eab8235945b07a4e9854145dd308c1d5.bindTooltip(
+                `<div>
+                     Geocodigo: CEI_PEN-2<br>Nombre común: ceiba
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_41015dea87951337f4bafc70bb27c0d3 = L.circleMarker(
+            var circle_marker_0e320c5ad53ae778f9085ccfa773d553 = L.circleMarker(
                 [28.4676035112, -16.2542716064],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_41015dea87951337f4bafc70bb27c0d3.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: CEI_SPE-1&lt;br&gt;Nombre común: palo borracho
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_0e320c5ad53ae778f9085ccfa773d553.bindTooltip(
+                `<div>
+                     Geocodigo: CEI_SPE-1<br>Nombre común: palo borracho
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_1701d47cc7f73210fba922878eb14edd = L.circleMarker(
+            var circle_marker_db5213e72676322af84496d783b4e578 = L.circleMarker(
                 [28.4583642767, -16.2643928797],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_1701d47cc7f73210fba922878eb14edd.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: CHA_HUM-1&lt;br&gt;Nombre común: palmito
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_db5213e72676322af84496d783b4e578.bindTooltip(
+                `<div>
+                     Geocodigo: CHA_HUM-1<br>Nombre común: palmito
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_8df65da35809a6ba6a9cd08b189fab2f = L.circleMarker(
+            var circle_marker_5b4c7202cf783c23a4f378a8f0e3f9d6 = L.circleMarker(
                 [28.4524279396, -16.2553582546],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_8df65da35809a6ba6a9cd08b189fab2f.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: COC_BOR-1&lt;br&gt;Nombre común: guano
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_5b4c7202cf783c23a4f378a8f0e3f9d6.bindTooltip(
+                `<div>
+                     Geocodigo: COC_BOR-1<br>Nombre común: guano
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_42fdc04370e21a3a00fc768d337b92c2 = L.circleMarker(
+            var circle_marker_a73877bcd92d5bfa61b6f027191c78d0 = L.circleMarker(
                 [28.4521545506, -16.2574992825],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_42fdc04370e21a3a00fc768d337b92c2.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: COC_MAC-1&lt;br&gt;Nombre común: palma azul
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_a73877bcd92d5bfa61b6f027191c78d0.bindTooltip(
+                `<div>
+                     Geocodigo: COC_MAC-1<br>Nombre común: palma azul
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_80c8bcead13b930914d69882a577f39f = L.circleMarker(
+            var circle_marker_4e04b83113392799c020e5ce066aa0b8 = L.circleMarker(
                 [28.4643024799, -16.2619266642],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_80c8bcead13b930914d69882a577f39f.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: DOV_CAF-1&lt;br&gt;Nombre común: manzana Kei, umkokola
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_4e04b83113392799c020e5ce066aa0b8.bindTooltip(
+                `<div>
+                     Geocodigo: DOV_CAF-1<br>Nombre común: manzana Kei, umkokola
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_9540cf8d8df8223440d0dc2b21eec16d = L.circleMarker(
+            var circle_marker_7c2f7d26f5cd4f274236ea41ad001d2b = L.circleMarker(
                 [28.4676157856, -16.2507925551],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_9540cf8d8df8223440d0dc2b21eec16d.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: DRA_DRA_dr-4&lt;br&gt;Nombre común: drago, drago de Canarias
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_7c2f7d26f5cd4f274236ea41ad001d2b.bindTooltip(
+                `<div>
+                     Geocodigo: DRA_DRA_dr-4<br>Nombre común: drago, drago de Canarias
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_3b02e00f022cc19a27a43b75c79e52dc = L.circleMarker(
+            var circle_marker_c709bb2b9994550523514a9c69132be3 = L.circleMarker(
                 [28.4647948964, -16.2487264514],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_3b02e00f022cc19a27a43b75c79e52dc.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: DRA_DRA_dr-5&lt;br&gt;Nombre común: drago, drago de Canarias
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_c709bb2b9994550523514a9c69132be3.bindTooltip(
+                `<div>
+                     Geocodigo: DRA_DRA_dr-5<br>Nombre común: drago, drago de Canarias
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_8efb795c22d42944bfa826ce109c9ce9 = L.circleMarker(
+            var circle_marker_6817dc164597c6487c0f8e1fc21da9b8 = L.circleMarker(
                 [28.4704150546, -16.255365739],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_8efb795c22d42944bfa826ce109c9ce9.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: DRA_DRA_dr-7&lt;br&gt;Nombre común: drago, drago de Canarias
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_6817dc164597c6487c0f8e1fc21da9b8.bindTooltip(
+                `<div>
+                     Geocodigo: DRA_DRA_dr-7<br>Nombre común: drago, drago de Canarias
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_58a81939d639808963df185d6564484a = L.circleMarker(
+            var circle_marker_43b59e69bf76503580571e6251187e1a = L.circleMarker(
                 [28.4644991781, -16.2651195592],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_58a81939d639808963df185d6564484a.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: EUC_CAM-1&lt;br&gt;Nombre común: eucalipto rojo
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_43b59e69bf76503580571e6251187e1a.bindTooltip(
+                `<div>
+                     Geocodigo: EUC_CAM-1<br>Nombre común: eucalipto rojo
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_a1be26ccf1455985bc6b2d8aeab7921d = L.circleMarker(
+            var circle_marker_20d8f8565315c72e75a52ba5390481bc = L.circleMarker(
                 [28.4500888906, -16.3265786564],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_a1be26ccf1455985bc6b2d8aeab7921d.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: EUP_BAL_ba-1&lt;br&gt;Nombre común: tabaiba dulce
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_20d8f8565315c72e75a52ba5390481bc.bindTooltip(
+                `<div>
+                     Geocodigo: EUP_BAL_ba-1<br>Nombre común: tabaiba dulce
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_1db4d046313be23f345c07ea9c6a942b = L.circleMarker(
+            var circle_marker_fc0506d7a3f1e506a660a9d98379a73b = L.circleMarker(
                 [28.4230529846, -16.3264444033],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_1db4d046313be23f345c07ea9c6a942b.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: EUP_CAN-1&lt;br&gt;Nombre común: cardÃ³n
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_fc0506d7a3f1e506a660a9d98379a73b.bindTooltip(
+                `<div>
+                     Geocodigo: EUP_CAN-1<br>Nombre común: cardÃ³n
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_4f5ec763960bb5498858e4ce5bcad022 = L.circleMarker(
+            var circle_marker_9e6bceda2df255ca8f83d6f55877cd8d = L.circleMarker(
                 [28.4647623132, -16.2488052225],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_4f5ec763960bb5498858e4ce5bcad022.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: EUP_LAC-1&lt;br&gt;Nombre común: planta cresta, huesos de dragÃ³n
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_9e6bceda2df255ca8f83d6f55877cd8d.bindTooltip(
+                `<div>
+                     Geocodigo: EUP_LAC-1<br>Nombre común: planta cresta, huesos de dragÃ³n
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_e92dba3a3b3a1abc89b9d6e6ea7a1b32 = L.circleMarker(
+            var circle_marker_686fd4451d389c9817c6cbb6c2fd9040 = L.circleMarker(
                 [28.47265676, -16.2550283106],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_e92dba3a3b3a1abc89b9d6e6ea7a1b32.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_BEG-1&lt;br&gt;Nombre común: baniano
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_686fd4451d389c9817c6cbb6c2fd9040.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_BEG-1<br>Nombre común: baniano
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_23d6930cd1587bf3753f5af7fc2d9fad = L.circleMarker(
+            var circle_marker_cc2597a5be80aafabf8d62562c4c6751 = L.circleMarker(
                 [28.4692007799, -16.2676920492],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_23d6930cd1587bf3753f5af7fc2d9fad.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_MAC-1&lt;br&gt;Nombre común: higuera de hoja estrecha
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_cc2597a5be80aafabf8d62562c4c6751.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_MAC-1<br>Nombre común: higuera de hoja estrecha
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_a9d87f1ba179e3db2caa43592fd7b57a = L.circleMarker(
+            var circle_marker_ea7c4d85bb9a665e80276c385c976285 = L.circleMarker(
                 [28.4683533994, -16.2489604128],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_a9d87f1ba179e3db2caa43592fd7b57a.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_MACR-1&lt;br&gt;Nombre común: higuera de BahÃ­a MoretÃ³n
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_ea7c4d85bb9a665e80276c385c976285.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_MACR-1<br>Nombre común: higuera de BahÃ­a MoretÃ³n
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_e5b323fdc64ad41dcb9356f49d64d5d6 = L.circleMarker(
+            var circle_marker_93a6d1d7f63ac94bcab534f85aab2172 = L.circleMarker(
                 [28.4681856513, -16.2490056276],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_e5b323fdc64ad41dcb9356f49d64d5d6.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_MACR-2&lt;br&gt;Nombre común: higuera de BahÃ­a MoretÃ³n
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_93a6d1d7f63ac94bcab534f85aab2172.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_MACR-2<br>Nombre común: higuera de BahÃ­a MoretÃ³n
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_baecafed361176a04fbbb11f064a3002 = L.circleMarker(
+            var circle_marker_c906a4e955ce411d786d521030b43dac = L.circleMarker(
                 [28.4680083275, -16.2490321406],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_baecafed361176a04fbbb11f064a3002.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_MACR-3&lt;br&gt;Nombre común: higuera de BahÃ­a MoretÃ³n
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_c906a4e955ce411d786d521030b43dac.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_MACR-3<br>Nombre común: higuera de BahÃ­a MoretÃ³n
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_2235c36114ac8f116bb84a1f5b74b6a5 = L.circleMarker(
+            var circle_marker_2b10e44e4a64952366ffd452d16d6369 = L.circleMarker(
                 [28.4678382826, -16.2490621097],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_2235c36114ac8f116bb84a1f5b74b6a5.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_MACR-4&lt;br&gt;Nombre común: higuera de BahÃ­a MoretÃ³n
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_2b10e44e4a64952366ffd452d16d6369.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_MACR-4<br>Nombre común: higuera de BahÃ­a MoretÃ³n
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_ee5f2a6f86c7e2fac364e3cc2fbb740e = L.circleMarker(
+            var circle_marker_9ed3da9cd97b9e133e5a8dfc48d581a8 = L.circleMarker(
                 [28.4719668656, -16.2542050695],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_ee5f2a6f86c7e2fac364e3cc2fbb740e.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_MACR-5&lt;br&gt;Nombre común: higuera de BahÃ­a MoretÃ³n
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_9ed3da9cd97b9e133e5a8dfc48d581a8.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_MACR-5<br>Nombre común: higuera de BahÃ­a MoretÃ³n
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_eed9d55c565c1db8b8acacbd94af993a = L.circleMarker(
+            var circle_marker_9875db069e5cf0bb284230fa1686bed3 = L.circleMarker(
                 [28.4728460186, -16.2547159502],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_eed9d55c565c1db8b8acacbd94af993a.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_MACR-6&lt;br&gt;Nombre común: higuera de BahÃ­a MoretÃ³n
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_9875db069e5cf0bb284230fa1686bed3.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_MACR-6<br>Nombre común: higuera de BahÃ­a MoretÃ³n
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_ae7a92e5fb656c74f18f7afcf09ff1c7 = L.circleMarker(
+            var circle_marker_21ed2ff282b949933c80507a5d5982cf = L.circleMarker(
                 [28.4633116221, -16.2524983501],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_ae7a92e5fb656c74f18f7afcf09ff1c7.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_MACR-7&lt;br&gt;Nombre común: higuera de BahÃ­a MoretÃ³n
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_21ed2ff282b949933c80507a5d5982cf.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_MACR-7<br>Nombre común: higuera de BahÃ­a MoretÃ³n
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_8f42b01ad6ec4408fe1088bca01557f8 = L.circleMarker(
+            var circle_marker_2994beee90823a00034d87bfa433ec56 = L.circleMarker(
                 [28.4682567778, -16.2504292426],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_8f42b01ad6ec4408fe1088bca01557f8.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_MIC-1&lt;br&gt;Nombre común: laurel de Indias
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_2994beee90823a00034d87bfa433ec56.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_MIC-1<br>Nombre común: laurel de Indias
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_c58c52f38ba831bf1b09ff7898481c53 = L.circleMarker(
+            var circle_marker_04223f0a7282291c31001a440bfbbcba = L.circleMarker(
                 [28.4681406037, -16.2503314517],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_c58c52f38ba831bf1b09ff7898481c53.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_MIC-2&lt;br&gt;Nombre común: laurel de Indias
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_04223f0a7282291c31001a440bfbbcba.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_MIC-2<br>Nombre común: laurel de Indias
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_0da6d7324ec52094a1522fd7a5753677 = L.circleMarker(
+            var circle_marker_f2b39ec24866ffee711e6f4b1cdb679c = L.circleMarker(
                 [28.464989437, -16.2482500337],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_0da6d7324ec52094a1522fd7a5753677.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_MIC-3&lt;br&gt;Nombre común: laurel de Indias
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_f2b39ec24866ffee711e6f4b1cdb679c.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_MIC-3<br>Nombre común: laurel de Indias
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_f7e7583ea48b8693dfdd390b357566c3 = L.circleMarker(
+            var circle_marker_972b624536771aea6017bcc78e36acb3 = L.circleMarker(
                 [28.464971783, -16.2483641149],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_f7e7583ea48b8693dfdd390b357566c3.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_MIC-4&lt;br&gt;Nombre común: laurel de Indias
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_972b624536771aea6017bcc78e36acb3.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_MIC-4<br>Nombre común: laurel de Indias
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_c2cc986d2d95a00070de267e788f0f11 = L.circleMarker(
+            var circle_marker_15befa1736d2c81690131cea373ca5d6 = L.circleMarker(
                 [28.4726095103, -16.2635614872],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_c2cc986d2d95a00070de267e788f0f11.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_MIC-5&lt;br&gt;Nombre común: laurel de Indias
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_15befa1736d2c81690131cea373ca5d6.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_MIC-5<br>Nombre común: laurel de Indias
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_7880b2bb1fad47b5a09b34d85e77d97d = L.circleMarker(
+            var circle_marker_8eb05b273c1600c52bbf0e726a35b01e = L.circleMarker(
                 [28.4627512212, -16.2539489666],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_7880b2bb1fad47b5a09b34d85e77d97d.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_REL-1&lt;br&gt;Nombre común: higuera, higuera sagrada
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_8eb05b273c1600c52bbf0e726a35b01e.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_REL-1<br>Nombre común: higuera, higuera sagrada
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_dd2b10cfe4a5b8bc2c2e007e2c73fca3 = L.circleMarker(
+            var circle_marker_45c8d6cc3a1b010cac2b63f29164a471 = L.circleMarker(
                 [28.4520410053, -16.2569235029],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_dd2b10cfe4a5b8bc2c2e007e2c73fca3.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_SYC-1&lt;br&gt;Nombre común: sicomoro
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_45c8d6cc3a1b010cac2b63f29164a471.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_SYC-1<br>Nombre común: sicomoro
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_8c4da78f58dedcbc7a6522a40471d412 = L.circleMarker(
+            var circle_marker_ffff6d50460c146d069bf477633a95bf = L.circleMarker(
                 [28.4747471746, -16.2539105414],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_8c4da78f58dedcbc7a6522a40471d412.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: FIC_VEL-1&lt;br&gt;Nombre común: higuerÃ³n
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_ffff6d50460c146d069bf477633a95bf.bindTooltip(
+                `<div>
+                     Geocodigo: FIC_VEL-1<br>Nombre común: higuerÃ³n
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_1c8767c1e4c60ec1bfbfa1dfc64bed13 = L.circleMarker(
+            var circle_marker_6eb5bf5cae8cab758bce9c2ef4bf987c = L.circleMarker(
                 [28.4653857125, -16.2496298362],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_1c8767c1e4c60ec1bfbfa1dfc64bed13.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: HAR_CAF-1&lt;br&gt;Nombre común: ciruelo de los Cafres
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_6eb5bf5cae8cab758bce9c2ef4bf987c.bindTooltip(
+                `<div>
+                     Geocodigo: HAR_CAF-1<br>Nombre común: ciruelo de los Cafres
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_ea52f85ab1fdba57919b2f5c2f7c5963 = L.circleMarker(
+            var circle_marker_ce7954361a58da0fbf497ae024ea4501 = L.circleMarker(
                 [28.4726553194, -16.2539517184],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_ea52f85ab1fdba57919b2f5c2f7c5963.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: HAR_CUP-1&lt;br&gt;Nombre común: harpulia, Ã¡rbol de los tulipanes de la india
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_ce7954361a58da0fbf497ae024ea4501.bindTooltip(
+                `<div>
+                     Geocodigo: HAR_CUP-1<br>Nombre común: harpulia, Ã¡rbol de los tulipanes de la india
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_73f6686d319401f42ba79986159453be = L.circleMarker(
+            var circle_marker_14818d2d73fbb9e93cfa31549c0b1c3d = L.circleMarker(
                 [28.4734950703, -16.2537048493],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_73f6686d319401f42ba79986159453be.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: HUR_CRE-1&lt;br&gt;Nombre común: jablillo, jabilla
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_14818d2d73fbb9e93cfa31549c0b1c3d.bindTooltip(
+                `<div>
+                     Geocodigo: HUR_CRE-1<br>Nombre común: jablillo, jabilla
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_021e2305e2b789973160084330d2f342 = L.circleMarker(
+            var circle_marker_b40b8b6023fd49408084bfd63de6a59d = L.circleMarker(
                 [28.4709142667, -16.2581966324],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_021e2305e2b789973160084330d2f342.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: JAC_MIM-1&lt;br&gt;Nombre común: jacarandÃ¡, palisandro
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_b40b8b6023fd49408084bfd63de6a59d.bindTooltip(
+                `<div>
+                     Geocodigo: JAC_MIM-1<br>Nombre común: jacarandÃ¡, palisandro
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_7c514005386413621b7cb2f50f5765b3 = L.circleMarker(
+            var circle_marker_6f65ea35d9f4017a6e8c77d9f5409d68 = L.circleMarker(
                 [28.465935814, -16.2564681465],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_7c514005386413621b7cb2f50f5765b3.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: KIG_AFR-1&lt;br&gt;Nombre común: Ã¡rbol de las salchichas
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_6f65ea35d9f4017a6e8c77d9f5409d68.bindTooltip(
+                `<div>
+                     Geocodigo: KIG_AFR-1<br>Nombre común: Ã¡rbol de las salchichas
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_3c184dcbdf7f4f75e3af4d843aa8536c = L.circleMarker(
+            var circle_marker_6a3d19588966dd5e0a9ae82b0ded22da = L.circleMarker(
                 [28.4718184099, -16.2549960327],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_3c184dcbdf7f4f75e3af4d843aa8536c.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: LAG_PAT-1&lt;br&gt;Nombre común: lagunaria, Ã¡rbol pica-pica, hibisco de Norfolk
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_6a3d19588966dd5e0a9ae82b0ded22da.bindTooltip(
+                `<div>
+                     Geocodigo: LAG_PAT-1<br>Nombre común: lagunaria, Ã¡rbol pica-pica, hibisco de Norfolk
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_4a9603fa8035a539ba362d8ba43ba1aa = L.circleMarker(
+            var circle_marker_999805ad5f49ca8963893aea23c747a0 = L.circleMarker(
                 [28.4661033671, -16.2726170094],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_4a9603fa8035a539ba362d8ba43ba1aa.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: PAR_JAV-1&lt;br&gt;Nombre común: parkia
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_999805ad5f49ca8963893aea23c747a0.bindTooltip(
+                `<div>
+                     Geocodigo: PAR_JAV-1<br>Nombre común: parkia
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_493dd90bae08c32b640b6ae562900f4e = L.circleMarker(
+            var circle_marker_8c4693b82a1ac82a0ac3a42cedb5dc1c = L.circleMarker(
                 [28.4720686178, -16.2524581229],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_493dd90bae08c32b640b6ae562900f4e.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: PHO_CAN-1&lt;br&gt;Nombre común: palmera canaria
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_8c4693b82a1ac82a0ac3a42cedb5dc1c.bindTooltip(
+                `<div>
+                     Geocodigo: PHO_CAN-1<br>Nombre común: palmera canaria
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_98d2fd7fc3a744c7750ba21b0b8e7d5f = L.circleMarker(
+            var circle_marker_84bcc3265008feec4b240a26e004feef = L.circleMarker(
                 [28.4646773739, -16.262211374],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_98d2fd7fc3a744c7750ba21b0b8e7d5f.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: PHO_DAC-1&lt;br&gt;Nombre común: palmera datilera
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_84bcc3265008feec4b240a26e004feef.bindTooltip(
+                `<div>
+                     Geocodigo: PHO_DAC-1<br>Nombre común: palmera datilera
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_dadbf516d80c7d6fa8ef3e7bf7da8b28 = L.circleMarker(
+            var circle_marker_8131e0f60138038d1c980e361a518fb0 = L.circleMarker(
                 [28.4634044289, -16.2644357123],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_dadbf516d80c7d6fa8ef3e7bf7da8b28.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: PHY_DIO-1&lt;br&gt;Nombre común: ombÃº, bella sombra, fitolaca
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_8131e0f60138038d1c980e361a518fb0.bindTooltip(
+                `<div>
+                     Geocodigo: PHY_DIO-1<br>Nombre común: ombÃº, bella sombra, fitolaca
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_6d2481efec43537ad519513dbfcb08d2 = L.circleMarker(
+            var circle_marker_d8d6fca4a29fecc72169cfd16ab8cbe7 = L.circleMarker(
                 [28.4715532151, -16.2576367095],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_6d2481efec43537ad519513dbfcb08d2.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: PIT_SAM-1&lt;br&gt;Nombre común: Ã¡rbol de la lluvia, samÃ¡n
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_d8d6fca4a29fecc72169cfd16ab8cbe7.bindTooltip(
+                `<div>
+                     Geocodigo: PIT_SAM-1<br>Nombre común: Ã¡rbol de la lluvia, samÃ¡n
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_8a247b375c1fc9e2ab8196d8dd5d3ef6 = L.circleMarker(
+            var circle_marker_4e193dc91b70b97612c7ddbdfb2b209c = L.circleMarker(
                 [28.4688975957, -16.2513410184],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_8a247b375c1fc9e2ab8196d8dd5d3ef6.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: POD_MAC_ma-1&lt;br&gt;Nombre común: pino budista, kusamaki
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_4e193dc91b70b97612c7ddbdfb2b209c.bindTooltip(
+                `<div>
+                     Geocodigo: POD_MAC_ma-1<br>Nombre común: pino budista, kusamaki
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_55c96d7883c2a3f1e88522db9493f179 = L.circleMarker(
+            var circle_marker_e89e2c42fd9ef83d9be38b13e53a221e = L.circleMarker(
                 [28.4519424774, -16.256861575],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_55c96d7883c2a3f1e88522db9493f179.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: RHI_MAN-1&lt;br&gt;Nombre común: mangle rojo.
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_e89e2c42fd9ef83d9be38b13e53a221e.bindTooltip(
+                `<div>
+                     Geocodigo: RHI_MAN-1<br>Nombre común: mangle rojo.
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_abc704f75ad19c630fcb08aba059859b = L.circleMarker(
+            var circle_marker_de2c0199de99f1d420d3759cac764b4c = L.circleMarker(
                 [28.4680653942, -16.2547066515],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_abc704f75ad19c630fcb08aba059859b.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: SPA_CAM_au_1&lt;br&gt;Nombre común: tulipanero del GabÃ³n, gallito, galeana
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_de2c0199de99f1d420d3759cac764b4c.bindTooltip(
+                `<div>
+                     Geocodigo: SPA_CAM_au_1<br>Nombre común: tulipanero del GabÃ³n, gallito, galeana
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_344d8499b7eeda3ae152d65cbbd93cfa = L.circleMarker(
+            var circle_marker_7dd61be89267ae124db6808ef481b67f = L.circleMarker(
                 [28.4681212957, -16.2547812595],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_344d8499b7eeda3ae152d65cbbd93cfa.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: SPA_CAM-1&lt;br&gt;Nombre común: tulipanero del GabÃ³n, gallito, galeana
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_7dd61be89267ae124db6808ef481b67f.bindTooltip(
+                `<div>
+                     Geocodigo: SPA_CAM-1<br>Nombre común: tulipanero del GabÃ³n, gallito, galeana
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_f77721f1810c15416355f19ae5b3c31f = L.circleMarker(
+            var circle_marker_acda42db3753ce8bd25a7117af22da63 = L.circleMarker(
                 [28.4519893111, -16.2561100009],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_f77721f1810c15416355f19ae5b3c31f.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: SWI_MAC-1&lt;br&gt;Nombre común: caoba de Honduras
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_acda42db3753ce8bd25a7117af22da63.bindTooltip(
+                `<div>
+                     Geocodigo: SWI_MAC-1<br>Nombre común: caoba de Honduras
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_625d267a23ee13ca11d35be60b69504a = L.circleMarker(
+            var circle_marker_a296c88ce11f0716230434f3f28d80d2 = L.circleMarker(
                 [28.4725361406, -16.2550423083],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_625d267a23ee13ca11d35be60b69504a.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: SWI_MAH-1&lt;br&gt;Nombre común: caoba de las indias occidentales
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_a296c88ce11f0716230434f3f28d80d2.bindTooltip(
+                `<div>
+                     Geocodigo: SWI_MAH-1<br>Nombre común: caoba de las indias occidentales
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_7db85deba8cab685337354b4f4ac5d63 = L.circleMarker(
+            var circle_marker_da9e818d8cac2c02dba0a68c5b6dd5ee = L.circleMarker(
                 [28.4699924805, -16.2665600968],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_7db85deba8cab685337354b4f4ac5d63.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: TAB_HET-1&lt;br&gt;Nombre común: apamate
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_da9e818d8cac2c02dba0a68c5b6dd5ee.bindTooltip(
+                `<div>
+                     Geocodigo: TAB_HET-1<br>Nombre común: apamate
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_02fddfa8cdb4c9049c1901f40065fdcd = L.circleMarker(
+            var circle_marker_b58e98de701326ee7d2c00f93e3a77af = L.circleMarker(
                 [28.4869057471, -16.2369463625],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_02fddfa8cdb4c9049c1901f40065fdcd.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: TAM_IND-1&lt;br&gt;Nombre común: tamarindo
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_b58e98de701326ee7d2c00f93e3a77af.bindTooltip(
+                `<div>
+                     Geocodigo: TAM_IND-1<br>Nombre común: tamarindo
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_037b83a07e8226e832e0953c27c33bff = L.circleMarker(
+            var circle_marker_fa40d0dd144f66d16d46b5ec170a0bdf = L.circleMarker(
                 [28.471746786, -16.2550505465],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_037b83a07e8226e832e0953c27c33bff.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: TAM_IND-2&lt;br&gt;Nombre común: tamarindo
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_fa40d0dd144f66d16d46b5ec170a0bdf.bindTooltip(
+                `<div>
+                     Geocodigo: TAM_IND-2<br>Nombre común: tamarindo
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_14d678ff4469ebf330424bbcaf49ceb1 = L.circleMarker(
+            var circle_marker_01de73ccc1cdbad90025dbc05bcc3484 = L.circleMarker(
                 [28.4648056047, -16.2622331204],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_14d678ff4469ebf330424bbcaf49ceb1.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: TAM_IND-3&lt;br&gt;Nombre común: tamarindo
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_01de73ccc1cdbad90025dbc05bcc3484.bindTooltip(
+                `<div>
+                     Geocodigo: TAM_IND-3<br>Nombre común: tamarindo
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_6f5c7c44bc18eb3ba49b8ff52064a6b0 = L.circleMarker(
+            var circle_marker_5e7d38f1a5521fd4bff201b8173ae71f = L.circleMarker(
                 [28.4731332744, -16.2542001554],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_6f5c7c44bc18eb3ba49b8ff52064a6b0.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: TER_MAN-1&lt;br&gt;Nombre común: almendro de Madagascar
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_5e7d38f1a5521fd4bff201b8173ae71f.bindTooltip(
+                `<div>
+                     Geocodigo: TER_MAN-1<br>Nombre común: almendro de Madagascar
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            var circle_marker_4b9e07577cf6f4ac16210704cfa1ec62 = L.circleMarker(
+            var circle_marker_1cdf33db5b74661199442b5d888b6319 = L.circleMarker(
                 [28.4731535103, -16.2541296098],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;gray&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;gray&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(marker_cluster_6938fbc60148db5805ad9ae378465650);
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_ce662830240bc4f211f50165b3e220d9);
         
     
-            circle_marker_4b9e07577cf6f4ac16210704cfa1ec62.bindTooltip(
-                `&lt;div&gt;
-                     Geocodigo: TER_MAN-2&lt;br&gt;Nombre común: almendro de Madagascar
-                 &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+            circle_marker_1cdf33db5b74661199442b5d888b6319.bindTooltip(
+                `<div>
+                     Geocodigo: TER_MAN-2<br>Nombre común: almendro de Madagascar
+                 </div>`,
+                {"sticky": true}
             );
         
     
-            marker_cluster_6938fbc60148db5805ad9ae378465650.addTo(map_8ea4692ab7eebcb826f3ffa3992cdd70);
+            marker_cluster_ce662830240bc4f211f50165b3e220d9.addTo(map_e18f388480065a58dfdc854b976f7c73);
         
-    
-            tile_layer_d3f295cece93a1e7761860be6c5a3842.addTo(map_8ea4692ab7eebcb826f3ffa3992cdd70);
-        
-    
-            marker_cluster_6938fbc60148db5805ad9ae378465650.addTo(map_8ea4692ab7eebcb826f3ffa3992cdd70);
-        
-&lt;/script&gt;
-&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+</script>
+</html>
