@@ -5,6 +5,7 @@ This project visualizes the unique botanical elements found in urban areas of **
 ## Visit the Final Project Website
 Explore the project live at: [Arboles Singulares de Santa Cruz de Tenerife](https://pablo-ferro.github.io/ArbolesSingularesSantaCruzTenerife/)
 
+![How the web looks like](InterfaceModelTrees.png)
 
 ## Features
 
