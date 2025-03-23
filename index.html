@@ -1,60 +1,122 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Árboles singulares de Santa Cruz de Tenerife</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Comfortaa:wght@700&family=Fredoka+One&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Press Start 2P', cursive;
             text-align: center;
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #E1F5FE, #B3E5FC);
+            color: #333;
+        }
+        .header {
+            position: relative;
+            background-image: url('https://www.barcelo.com/guia-turismo/wp-content/uploads/2024/09/ok-drago-milenario.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            margin-bottom: 40px;
+            overflow: hidden; /* Ensure the tooltip stays within the header */
+        }
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3); /* Dark overlay for better contrast */
+        }
+        .header .tooltip {
+            position: absolute;
+            display: none;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-size: 14px;
+            font-family: 'Times New Roman', serif; /* Old-school font */
+            padding: 5px 10px;
+            border-radius: 5px;
+            pointer-events: none; /* Ensure the tooltip doesn't interfere with mouse events */
+            white-space: nowrap;
         }
         h1 {
-            color: #2E8B57;
-            font-family: 'Trebuchet MS', sans-serif;
-            font-size: 46px;
-            text-align: left;
-            margin: 20px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 48px;
+            color: #FFFFFF;
+            text-shadow: 4px 4px 0px #2E8B57;
+            position: relative;
+            z-index: 1;
+            margin: 0;
+            animation: title-shake 2s infinite alternate;
+        }
+        @keyframes title-shake {
+            0% { transform: rotate(-2deg); }
+            100% { transform: rotate(2deg); }
         }
         h2 {
-            color: #696969;
-            font-size: 16px;
-            text-align: left;
-            margin: 10px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 20px; /* Smaller font size */
+            color: #FFFFFF;
+            text-shadow: 2px 2px 0px #228B22;
+            position: relative;
+            z-index: 1;
+            margin: 10px 0 0;
         }
         .description {
-            text-align: left;
-            margin: 20px;
-            font-size: 16px;
+            font-family: 'Press Start 2P', cursive;
+            text-align: justify;
+            margin: 40px;
+            padding: 20px;
+            font-size: 18px;
+            line-height: 1.8;
             color: #4F4F4F;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .description strong {
+            font-size: 22px;
+            color: #2E8B57;
+        }
+        .description em {
+            font-size: 16px;
+            color: #696969;
         }
         .footer {
-            margin-top: 30px;
+            margin-top: 50px;
             color: #696969;
             font-size: 14px;
+            font-family: 'Comfortaa', cursive;
         }
         iframe {
             width: 100%;
-            height: 600px;
+            height: 900px; /* Further increased height to fit the map */
             border: none;
+            margin: 20px 0;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-
     </style>
 </head>
 <body>
-    <h1>Árboles singulares de Santa Cruz de Tenerife</h1>
-    <h2>. Encuentra los 63 árboles singulares de la ciudad canaria en este mapa.</h2>
+    <div class="header" onmousemove="showTooltip(event)" onmouseleave="hideTooltip()">
+        <h1>Árboles singulares de Santa Cruz de Tenerife</h1>
+        <h2>Encuentra los 63 árboles singulares de la ciudad canaria en este mapa.</h2>
+        <div class="tooltip" id="tooltip">El Drago Milenario, vaya porte</div>
+    </div>
 
     <iframe src="singular_trees_map.html"></iframe>
 
     <div class="description">
-        En esta visualización, exploramos algunos de los elementos botánicos más singulares que adornan las áreas urbanas de Santa Cruz de Tenerife. 
-        Estos árboles, seleccionados por su excepcional tamaño, longevidad, rareza o valor histórico, representan no solo un patrimonio natural, sino también un legado cultural profundamente arraigado en la ciudad. 
-        El propósito de este proyecto es democratizar el acceso al conocimiento sobre estos recursos naturales únicos en España, facilitando a la comunidad la oportunidad de descubrir y valorar el enorme impacto de los árboles singulares en su entorno urbano. 
-        A través de esta iniciativa, buscamos promover la conciencia ambiental y resaltar la importancia de preservar estos tesoros naturales, fomentando una mayor conexión entre las personas y el paisaje urbano que las rodea.
+        En esta visualización, exploramos algunos de los elementos botánicos más <strong>singulares</strong> que adornan las áreas urbanas de Santa Cruz de Tenerife. 
+        Estos árboles, seleccionados por su excepcional <strong>tamaño</strong>, <strong>longevidad</strong>, <strong>rareza</strong> o <strong>valor histórico</strong>, representan no solo un <strong>patrimonio natural</strong>, sino también un <strong>legado cultural</strong> profundamente arraigado en la ciudad. 
+        El propósito de este proyecto es <strong>democratizar el acceso</strong> al conocimiento sobre estos recursos naturales únicos en España, facilitando a la comunidad la oportunidad de <strong>descubrir</strong> y <strong>valorar</strong> el enorme impacto de los árboles singulares en su entorno urbano. 
+        A través de esta iniciativa, buscamos promover la <strong>conciencia ambiental</strong> y resaltar la importancia de <strong>preservar</strong> estos tesoros naturales, fomentando una mayor conexión entre las personas y el <strong>paisaje urbano</strong> que las rodea.
     </div>
 
     <div class="footer">
@@ -62,5 +124,18 @@
         Actualizado en Octubre de 2024.
     </div>
 
+    <script>
+        function showTooltip(event) {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.style.display = 'block';
+            tooltip.style.left = `${event.clientX + 10}px`; // Position tooltip slightly offset from the cursor
+            tooltip.style.top = `${event.clientY + 10}px`;
+        }
+
+        function hideTooltip() {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
